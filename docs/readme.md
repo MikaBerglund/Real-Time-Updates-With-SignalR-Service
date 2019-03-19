@@ -19,3 +19,9 @@ To demonstrate how to feed the *SignalR Service* with events from virtually any 
 With the same mechanism, you could then use any [Azure Functions binding](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings#supported-bindings) that supports triggering to trigger a function that would feed in event data into the SignalR Service. If a service or technology is not on that list, then there's a big chance that you could use the [HTTP & Webhook triggers](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook) to get data from more or less any system.
 
 [Read more about the event source application](event-source.md).
+
+
+Disclaimer
+----------
+
+> Please remember that by the time of writing (late March 2019), the *Azure SignalR Service* is still in preview, and so are all SDKs and other class libraries related to the service.
