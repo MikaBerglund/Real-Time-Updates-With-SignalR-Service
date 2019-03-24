@@ -6,6 +6,7 @@
 # Local settings
 appsettings.local.json
 appsettings.Development.json
+local.settings.json
 
 
 # User-specific files
