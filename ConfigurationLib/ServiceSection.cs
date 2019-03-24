@@ -11,7 +11,7 @@ namespace ConfigurationLib
         {
             get
             {
-                return $"Endpoing=https://{this.HostName};AccessKey={this.Key}";
+                return $"endpoint=https://{this.HostName};accesskey={this.Key}";
             }
         }
 
