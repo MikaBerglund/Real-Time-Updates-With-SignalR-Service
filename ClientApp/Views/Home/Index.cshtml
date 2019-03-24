@@ -1,3 +1,20 @@
 ﻿
-<h1>Index</h1>
+<h1>Azure SignalR Service Client</h1>
 
+
+<h2>Connection Status</h2>
+<ul>
+    <li>Hearbeat: <span id="heartbeat-status"></span></li>
+    <li>Message: <span id="message-status"></span></li>
+</ul>
+
+<h2>Events</h2>
+<ul>
+    <li>Last heartbeat: <span id="heartbeat"></span></li>
+    <li>Last message: <span id="message"></span></li>
+</ul>
+
+@section scripts {
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@@aspnet/signalr@1.1.2/dist/browser/signalr.min.js"></script>
+    <script src="~/js/app.js"></script>
+}
