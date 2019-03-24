@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ClientApp.Hubs;
 using ConfigurationLib;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -49,6 +50,14 @@ namespace ClientApp
             }
 
             app.UseMvc();
+
+            app.UseAzureSignalR(routes =>
+            {
+                routes.MapHub<HeartbeatHub>("/events/heartbeat");
+                routes.MapHub<MessageHub>("/events/message");
+            });
+
+            app.UseStaticFiles();
         }
     }
 }
